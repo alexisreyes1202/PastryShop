@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MY BIBLIOGRAPHY</title>
+    <style>
+        body {
+            background-color: #FFEBF0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            background-color: #FF69B4;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            border: 3px solid #FF1493;
+        }
+
+        h2 {
+            color: #ffffff;
+            background-color: #FF69B4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FF69B4;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            display: block;
+            margin: 10px auto;
+            border: 3px solid #FF1493;
+            border-radius: 10px;
+        }
+
+        div {
+            margin: 20px;
+            padding: 15px;
+            background-color: #FFD1DC;
+            border-radius: 10px;
+            border: 2px solid #FF69B4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        th, td {
+            border: 1px solid #FF69B4;
+            text-align: center;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #FF69B4;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #FFD1DC;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 2px solid #FF69B4;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #FF69B4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #FF1493;
+        }
+        
+        /* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <h1>😎 ALEXIS CARINAN REYES 😎</h1>
+
+    <a href="https://www.facebook.com/alexis.reyes.1202">
+        <p style="text-align: center">🌟 Social Media Account 🌟</p>
+    </a>
+
+    <p style="text-align: center">
+        <img src="css/reyes.jpg"alt="Profile Picture" width="200" height="200">
+    </p>
+
+    <div>
+        <p>
+            Good day, I'm Alexis C. Reyes from BTVTED-EST-1A-M. My family consists of 5 members, plus 3 if you include my pets. 
+            <strong>Let’s begin with my family:</strong> My father is a tricycle driver/kagawad in our barangay. My mother is a janitress in Popey's office in Paco, Manila. 
+            My sister works in an IT company in Quezon City, Metro Manila. Lastly, my brother is currently working at KFC. I’m the youngest in my family, and I enjoy it because I often get what I want—just joking! 
+            It has its challenges, too, but I wouldn’t trade it for anything. 
+        </p>
+        <img src="file:///C:/Users/alexi/OneDrive/Documents/HTML/FAMILY.jpg" alt="Family Picture" width="300" height="200">
+    </div>
+
+    <div>
+        <p>
+            <strong>My Hobbies:</strong> I love playing online MOBA games like League of Legends, Wildrift, and Mobile Legends. I also binge-watch anime series such as <em>Arcane</em> and <em>Demon Slayer</em> during my free time. Hanging out with friends and grabbing coffee is another way I relax. Exploring new places is something I enjoy when I want to escape the hustle and bustle of daily life.
+        </p>
+        <img src="file:///C:/Users/alexi/OneDrive/Documents/HTML/HOBBY.jpg" alt="Hobby Picture" width="300" height="200">
+    </div>
+
+    <div>
+        <p>
+            <strong>My Favorite Quotation:</strong> “You've got a good heart, don't ever lose it, no matter how the world tries to break you.” 
+            This quote, spoken by Vander in the animated series <em>Arcane</em>, inspires me deeply. It reminds me that while the world can be harsh, our goodness and integrity are ours to keep. 
+        </p>
+        <img src="file:///C:/Users/alexi/OneDrive/Documents/HTML/FAV%20QUOTE.jpg" alt="Favorite Quote Picture" width="300" height="200">
+    </div>
+
+    <div>
+        <p>
+            <strong>My Goals:</strong> My ultimate goal in life is to be genuinely happy and content with what I have. While I once dreamed of becoming a veterinary doctor, I believe God has a plan for me. My current focus is on graduating, finding a stable job, and achieving success for both my family and myself.
+        </p>
+        <img src="file:///C:/Users/alexi/OneDrive/Documents/HTML/GOAL.jpg" alt="Goal Picture" width="300" height="200">
+    </div>
+
+    <h2>My Schedule</h2>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Subject</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>11AM-2PM</td>
+            <td>PROF ED 2</td>
+            <td>Reporting of Unit 6</td>
+        </tr>
+        <!-- Add the rest of the schedule here as needed -->
+    </table>
+
+    <h2>My Form</h2>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Alexis"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Reyes"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #fff0f5; /* Light pink background */
+    color: #4a154b; /* Deep plum for text */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(219, 112, 147, 0.9); /* Deep pink */
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background 0.3s ease, transform 0.3s;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    background: #ffb6c1; /* Light pink */
+    color: #8b0048; /* Deep rose */
+    transform: scale(1.1);
+}
+}
+
+.front-title {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to bottom, #ffbad2, #fff0f5); /* Gradient background */
+    color: #4a154b;
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+}
+
+.front-title h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.front-title p {
+    font-size: 20px;
+}
+
+#menu {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffe4ed; /* Soft pastel pink */
+}
+
+#menu h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #4a154b;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    width: 280px;
+    text-align: center;
+    background: #fff; /* White card background */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #ff8fb1; /* Match header color */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        width: 100%;
+    }
+}
